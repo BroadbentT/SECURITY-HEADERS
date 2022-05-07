@@ -97,7 +97,7 @@ def scanpage(host):
 # AUTHOR  : Terence Broadbent                                                    
 # CONTRACT: GitHub                                                               
 # Version : 1.0
-# Details : Create functional subroutine calls from main.
+# Details : MAIN PROGRAM.
 # Modified: N/A                                                               
 # -------------------------------------------------------------------------------------
 
