@@ -53,8 +53,8 @@ os.system("xdotool key Alt+Shift+S; xdotool type 'HTTP SECURITY HEADERS'; xdotoo
 # Modified: N/A                                                               
 # -------------------------------------------------------------------------------------
 
-def scanhost(host, port):
-   os.system("nmap -p " + str(port) + " --script=http-security-headers -oN securityheaders1.txt " + host + " 2>&1 > scan.tmp")
+def scanhost(filename, host, port):
+   os.system("nmap -p " + str(port) + " --script=http-security-headers -oN " + filename + " " + host + " 2>&1 > scan.tmp")
    return   
 
 def parsehost(file):
@@ -90,10 +90,7 @@ def parsehost(file):
    
 def scanpage(host):
    page = requests.get("https://" + host)
-   os.system("echo " + str(page.headers) + " > securityheaders2.txt")
-   return
-   
-def parsepage():
+   os.system("echo " + str(page.headers) + " > securityheaders3.txt")
    return
    
 # -------------------------------------------------------------------------------------
@@ -109,14 +106,14 @@ print(colored("Pentest People - HTTP Security Header Checker.", colour3))
 print("Target:", host)
 print("- - - - - - - - - - - - - - - - - - - - - - -")
 print("HOST CHECK PORT 80:")
-scanhost(host,80)
+scanhost("securityheaders1.txt", host, 80)
 parsehost("securityheaders1.txt")
 print("HOST CHECK PORT 443:")
-scanhost(host,443)
-parsehost("securityheaders1.txt")
+scanhost("securityheaders2.txt", host, 443)
+parsehost("securityheaders2.txt")
 print("WEBPAGE CHECK:")
 scanpage(host)
-parsehost("securityheaders2.txt")
+parsehost("securityheaders3.txt")
 
 
    
