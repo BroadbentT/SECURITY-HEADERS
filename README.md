@@ -1,6 +1,6 @@
 # SECURITY-HEADERS
 
-securityheaders.py:be356f3389409f7aff33bf817392db2a
+securityheaders.py : b778c4c045d3570847d52a4339c02d5f
 
 Usage: python3 securityheaders.py google.com
 

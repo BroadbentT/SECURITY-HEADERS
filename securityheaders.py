@@ -16,10 +16,9 @@
 
 import os
 import sys
-import pyfiglet
 import requests
 
-from termcolor import colored
+from termcolor import colored # pip3 install termcolor  
 
 colour1 = 'green'
 colour2 = 'yellow'
