@@ -1,8 +1,9 @@
 # SECURITY-HEADERS
 
-securityheaders.py : b778c4c045d3570847d52a4339c02d5f
+headers.py    : add hash value
+depreciated.py: add hash value
 
-Usage: python3 securityheaders.py google.com
+Usage: python3 headers.py google.com
 
 <p align="center">
   <img src="https://github.com/BroadbentT/SECURITY-HEADERS/blob/main/headers.png">
