@@ -10,5 +10,6 @@ Usage: python3 security_headers.py google.com<br>
 <br>
 
 <p align="center">
-  <img src="https://github.com/BroadbentT/SECURITY-HEADERS/blob/main/headers.png">
+  <img src="https://github.com/BroadbentT/SECURITY-HEADERS/blob/main/headers1.png">
+  <img src="https://github.com/BroadbentT/SECURITY-HEADERS/blob/main/headers2.png">  
 </p>
