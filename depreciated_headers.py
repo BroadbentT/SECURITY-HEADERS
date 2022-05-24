@@ -62,7 +62,7 @@ def parsehost(file):
    with open(file) as search:
       for line in search:
          if ("X-XSS-Protection".upper() in line.upper()):
-            print(colored("X-XSS-Protection: Not Found", colour2))
+            print(colored("X-XSS-Protection: Found, but depreciated", colour2))
             a = 1
    if a == 0:
       print(colored("X-XSS-Protection: Not Found", colour1))
