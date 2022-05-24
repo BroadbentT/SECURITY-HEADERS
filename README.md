@@ -5,6 +5,9 @@ depreciated_headers.py: a0812c886d045583375e118ad58f0724
 
 Usage: python3 security_headers.py google.com<br>
        python3 depreciated_headers.py google.com
+       
+<br>
+<br>
 
 <p align="center">
   <img src="https://github.com/BroadbentT/SECURITY-HEADERS/blob/main/headers.png">
