@@ -1,7 +1,7 @@
 # SECURITY-HEADERS
 
-headers.py    : add hash value
-depreciated.py: add hash value
+security_headers.py   : 18405a947e05cbe2cc46d2748c40c87d<br>
+depreciated_headers.py: a0812c886d045583375e118ad58f0724
 
 Usage: python3 headers.py google.com
 
