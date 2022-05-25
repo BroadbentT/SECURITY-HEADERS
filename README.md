@@ -7,7 +7,7 @@
 |insecure_methods.py   |b8e983e4d91bf6916c48b5ee7a3d46e9|
 <br>
 <br>
-Usage:	
+Usage:</br>	
 		python3 security_headers.py google.com<br>
 		python3 depreciated_headers.py google.com<br>
 		python3 insecure_methods.py google.com<br>
