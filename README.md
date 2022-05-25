@@ -13,7 +13,8 @@ Usage:</br>
 		python3 insecure_methods.py google.com<br>
 <br>
 <br>
-<p align="center">
+<p align="justify">
   <img src="https://github.com/BroadbentT/SECURITY-HEADERS/blob/main/headers1.png">
   <img src="https://github.com/BroadbentT/SECURITY-HEADERS/blob/main/headers2.png">  
+  <img src="https://github.com/BroadbentT/SECURITY-HEADERS/blob/main/headers3.png">  
 </p>
