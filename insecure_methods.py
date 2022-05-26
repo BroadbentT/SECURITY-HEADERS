@@ -2,7 +2,7 @@
 # coding:UTF-8
 
 # -------------------------------------------------------------------------------------
-#          PYTHON SCRIPT FILE FOR THE CONFIRMATION OF HTTP SECURITY HEADERS
+#          PYTHON SCRIPT FILE FOR THE CONFIRMATION OF HTTP SECURITY METHODS
 #                       BY TERENCE BROADBENT BSc CYBER SECURITY
 # -------------------------------------------------------------------------------------
 

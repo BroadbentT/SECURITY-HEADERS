@@ -4,7 +4,7 @@
 | --                   | --                             |
 |security_headers.py   |18405a947e05cbe2cc46d2748c40c87d|
 |depreciated_headers.py|92a592ed7e802ad987b00021a24a1e5a|
-|insecure_methods.py   |12b2e1b833692ea384a561046d5029c7|
+|insecure_methods.py   |afafd29ca22aae62034dbaab5ca96953|
 <br>
 <br>
 Usage:</br>	
