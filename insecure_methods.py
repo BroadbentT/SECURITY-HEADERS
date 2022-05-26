@@ -25,6 +25,9 @@ colour2 = 'yellow'
 colour3 = 'blue'
 colour4 = 'red'
 colour5 = 'cyan'
+colour6 = 'magenta'
+
+method_list = ['GET', 'HEAD', 'POST', 'PUT', 'DELETE', 'CONNECT', 'OPTIONS', 'TRACE']
 
 # -------------------------------------------------------------------------------------
 # AUTHOR  : Terence Broadbent                                                    
@@ -78,20 +81,24 @@ def parsehost(file):
             print(colored("POST: Found", colour1))
             c = 1
          if ("PUT".upper() in line.upper()): 
-            print(colored("PUT: Found", colour4)) 
+            if d != 1:
+               print(colored("PUT: Found", colour4)) 
             d = 1
          if ("DELETE".upper() in line.upper()): 
-            print(colored("DELETE: Found", colour4)) 
+            if e != 1:
+               print(colored("DELETE: Found", colour4)) 
             e = 1
          if ("CONNECT".upper() in line.upper()): 
-            print(colored("CONNECT: Found", colour4)) 
+            if f !=1 :
+               print(colored("CONNECT: Found", colour4)) 
             f =1
          if ("OPTIONS".upper() in line.upper()): 
             print(colored("OPTIONS: Found", colour1)) 
             g = 1
          if ("TRACE".upper() in line.upper()): 
-            print(colored("TRACE: Found", colour4)) 
-            h = 1                        
+            if h != 1:
+               print(colored("TRACE: Found", colour4)) 
+            h = 1  
    if a == 0:
       print(colored("GET: Not Found", colour2))
    if b == 0:
@@ -99,8 +106,7 @@ def parsehost(file):
    if c ==  0:
       print(colored("POST: Not Found", colour2))
    if d == 0:
-      print(colored("PUT: Not Found", colour2))
-        
+      print(colored("PUT: Not Found", colour2))        
    if e == 0:
       print(colored("DELETE: Not Found", colour2))        
    if f == 0:
@@ -111,28 +117,26 @@ def parsehost(file):
       print(colored("TRACE: Not Found", colour2))       
    return
    
-def scanpage1(host):
-   method_list = ['GET', 'HEAD', 'POST', 'PUT', 'DELETE', 'CONNECT', 'OPTIONS', 'TRACE']
+def scanhttp(host):
    for method in method_list:
       req = requests.request(method, "http://" + host)
-      print(colored(method, colour3), end=' ')
-      print(colored(req.status_code, colour3), end=' ')
-      print(colored(req.reason, colour3)) 
+      print(colored(method, colour6), end=' ')
+      print(colored(req.status_code, colour6), end=' ')
+      print(colored(req.reason, colour6)) 
    return
    
-def scanpage2(host):
-   method_list = ['GET', 'HEAD', 'POST', 'PUT', 'DELETE', 'CONNECT', 'OPTIONS', 'TRACE']
+def scanhttps(host):
    for method in method_list:
       req = requests.request(method, "https://" + host)
-      print(colored(method, colour3), end=' ')
-      print(colored(req.status_code, colour3), end=' ')
-      print(colored(req.reason, colour3))     
+      print(colored(method, colour6), end=' ')
+      print(colored(req.status_code, colour6), end=' ')
+      print(colored(req.reason, colour6))     
    return
    
 def banner():
    print(colored("\nPentest People - HTTP Insecure Methods Checker.", colour5))
    print("Target:", host)   
-   print("- - - - - - - - - - - - - - - - - - - - - - -")   
+   print("- - - - - - - - - - - - - - - - - - - - - - - -")   
    return
    
 # -------------------------------------------------------------------------------------
@@ -149,12 +153,12 @@ print("HOST CHECK PORT 80:")
 scanhost("insecuremethods1.txt", host, 80)
 parsehost("insecuremethods1.txt")
 print("WEBPAGE CHECK:")
-scanpage1(host)
+scanhttp(host)
 banner()
 print("HOST CHECK PORT 443:")
 scanhost("insecuremethods2.txt", host, 443)
 parsehost("insecuremethods2.txt")
 print("WEBPAGE CHECK:")
-scanpage2(host)
+scanhttps(host)
 print("\n")
 
