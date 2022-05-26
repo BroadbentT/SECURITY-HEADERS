@@ -25,6 +25,7 @@ colour2 = 'yellow'
 colour3 = 'blue'
 colour4 = 'red'
 colour5 = 'cyan'
+colour6 = 'magenta'
 
 # -------------------------------------------------------------------------------------
 # AUTHOR  : Terence Broadbent                                                    
@@ -76,7 +77,7 @@ def scanpage(host):
 def banner():
    print(colored("Pentest People - HTTP Depreciated Security Header Checker.", colour5))
    print("Target:", host)
-   print("- - - - - - - - - - - - - - - - - - - - - - -")
+   print("- - - - - - - - - - - - - - - - - - - - - - - - - - - - -")
    return
    
 # -------------------------------------------------------------------------------------

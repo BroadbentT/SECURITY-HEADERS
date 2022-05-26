@@ -3,8 +3,8 @@
 |FILENAME              |MD5 HASH                        |
 | --                   | --                             |
 |security_headers.py   |18405a947e05cbe2cc46d2748c40c87d|
-|depreciated_headers.py|a0812c886d045583375e118ad58f0724|
-|insecure_methods.py   |b8e983e4d91bf6916c48b5ee7a3d46e9|
+|depreciated_headers.py|92a592ed7e802ad987b00021a24a1e5a|
+|insecure_methods.py   |12b2e1b833692ea384a561046d5029c7|
 <br>
 <br>
 Usage:</br>	
