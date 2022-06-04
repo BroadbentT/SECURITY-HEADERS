@@ -104,7 +104,7 @@ os.system("nmap -p 80,443 --script=vuln -oN vulner.txt " + host + " > null.txt")
 print(colored("[+] Performing unsafe escaping scan...", colour1))
 os.system("nmap -p 80,443 --script=http-unsafe-output-escaping -oN unsafe.txt " + host + " > null.txt")
 print(colored("[+] Performing SQL injection scan...", colour1))
-os.system("nmap -p 80,443 --script=http  -oN sqlinject.txt " + host + " > null.txt")
+os.system("nmap -p 80,443 --script=http-sql-injection -oN sqlinject.txt " + host + " > null.txt")
 print("Scanning completed...")
 
 
