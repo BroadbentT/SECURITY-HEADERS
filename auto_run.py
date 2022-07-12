@@ -97,7 +97,9 @@ print(colored("[+] Performing load balancer scan...", colour1))
 os.system("lbd https://" + host + " > lbd.txt")
 print(colored("[+] Performing WAF scan...", colour1))
 os.system("wafw00f -a https://" + host + " > wafw00f.txt")
-print(colored("[+] Performing vul1 #1 scan...", colour1))
+print(colored("[+] Performing sitemap scan...", colour1))
+os.system("nmap -Pn --script=http-sitemap-generator -oN sitemap.txt " + host + " > null.txt")
+print(colored("[+] Performing vuln #1 scan...", colour1))
 os.system("nmap -p 80,443 --script=vuln -oN vuln.txt " + host + " > null.txt")
 print(colored("[+] Performing vuln #2 scan...", colour1))
 os.system("nmap -p 80,443 --script=vuln -oN vulner.txt " + host + " > null.txt")
@@ -105,7 +107,10 @@ print(colored("[+] Performing unsafe escaping scan...", colour1))
 os.system("nmap -p 80,443 --script=http-unsafe-output-escaping -oN unsafe.txt " + host + " > null.txt")
 print(colored("[+] Performing SQL injection scan...", colour1))
 os.system("nmap -p 80,443 --script=http-sql-injection -oN sqlinject.txt " + host + " > null.txt")
+print(colored("[+] Performing a crytographic scan...", colour1))
+os.system("testssl --full https://" + host + " | tee testssl.txt > null.txt")
 print("Scanning completed...")
+
 
 
 
