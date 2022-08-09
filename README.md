@@ -10,7 +10,7 @@
 |security_headers.py   |18405a947e05cbe2cc46d2748c40c87d|
 |depreciated_headers.py|92a592ed7e802ad987b00021a24a1e5a|
 |insecure_methods.py   |afafd29ca22aae62034dbaab5ca96953|
-|auto_run.py           |1a699481ffbc75ad2eef85f955fd0df8|
+|auto_run.py           |bd87ed205789552242c86082841abe37|
 <br>
 <br>
 Usage:</br>	
