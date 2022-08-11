@@ -93,7 +93,7 @@ def parsehost(file):
                print(colored("CONNECT: Found", colour4)) 
             f =1
          if ("OPTIONS".upper() in line.upper()): 
-            print(colored("OPTIONS: Found", colour1)) 
+            print(colored("OPTIONS: Found", colour5)) 
             g = 1
          if ("TRACE".upper() in line.upper()): 
             if h != 1:
