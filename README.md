@@ -11,6 +11,7 @@
 |depreciated_headers.py|92a592ed7e802ad987b00021a24a1e5a|
 |insecure_methods.py   |afafd29ca22aae62034dbaab5ca96953|
 |auto_run.py           |54277fdcdc64ac810b04ae0780b9de21|
+|jwt_token.py          |8f2c57f4361643a787ca5a883a05ec16|
 <br>
 <br>
 Usage:</br>	
@@ -18,6 +19,7 @@ Usage:</br>
 		python3 depreciated_headers.py google.com			<br>
 		python3 insecure_methods.py google.com				<br>
 		pyhton3 auto_run.py google.com					<br>
+		python3 jwt_token.py						<br>
 <br>
 <p align="center">
   <img src="https://github.com/BroadbentT/SECURITY-HEADERS/blob/main/headers1.png">
