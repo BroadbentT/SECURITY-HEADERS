@@ -1,0 +1,5 @@
+session = requests.Session()
+session.auth = ('username','password')
+auth = session.post('http://' + host)
+page = session.get('https://' + host)
+
