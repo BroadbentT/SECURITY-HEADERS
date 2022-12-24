@@ -12,6 +12,7 @@
 |insecure_methods.py   |afafd29ca22aae62034dbaab5ca96953|
 |auto_run.py           |54277fdcdc64ac810b04ae0780b9de21|
 |jwt_token.py          |8f2c57f4361643a787ca5a883a05ec16|
+|AutoNuclei.py         |cf44ca55b8573448b5fbaebe0a6ac29b|
 <br>
 <br>
 Usage:</br>	
