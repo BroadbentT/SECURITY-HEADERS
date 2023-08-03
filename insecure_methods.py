@@ -75,7 +75,7 @@ def parsehost(file):
             print(colored("GET: Found", colour1))
             a = 1
          if ("HEAD".upper() in line.upper()): 
-            print(colored("HEAD: Found", colour4))
+            print(colored("HEAD: Found", colour1))
             b = 1
          if ("POST".upper() in line.upper()): 
             print(colored("POST: Found", colour1))
