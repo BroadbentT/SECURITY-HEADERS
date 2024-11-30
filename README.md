@@ -7,7 +7,7 @@
 
 |FILENAME              |MD5 HASH                        |
 | --                   | --                             |
-|security_headers.py   |1184535d6c83c7f38d34210db03c4252|
+|security_headers.py   |fa553f7d240e2858410dc8e26795f485|
 |depreciated_headers.py|1be0f053d412ea1118d9f1085e09b4f6|
 |insecure_methods.py   |2a1f114af11c9104ded4dbbb3a350925|
 |auto_run.py           |54277fdcdc64ac810b04ae0780b9de21|

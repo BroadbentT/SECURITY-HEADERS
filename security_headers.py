@@ -75,7 +75,7 @@ def parsehost(file):
             print(colored("Content-Security-Policy: Found", colour1))
             b = 1
          if ("X-Frame-Options".upper() in line.upper()): 
-            print(colored("X-Frame-Options: Found", colour1))
+            print(colored("X-Frame-Options: Found, but depreciated", colour2))
             c = 1
          if ("X-Content-Type-Options".upper() in line.upper()): 
             print(colored("X-Content-Type-Options: Found", colour1)) 
